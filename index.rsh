@@ -7,12 +7,13 @@ const Player = {
 
 export const main = Reach.App(() => {
   const Alice = Participant('Alice', {
-    // Specify Alice's interact interface here
+    ...Player,
   });
   const Bob   = Participant('Bob', {
-   // Specify Bob's interact interface here
+  ...Player,
   });
   init();
-  // write your program here
+ 
+   Alice.only(() => {
 
 });
